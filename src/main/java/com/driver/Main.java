@@ -5,13 +5,13 @@ public class Main {
     B b = new B();
     System.out.println(b.meth());
   }
-  class A {
+  static class A {
 
     public String meth(){
       return "Invoking method from class A";
     }
   }
-  class B extends A{
+  static class B extends A{
 
     @Override
     public String meth() {
